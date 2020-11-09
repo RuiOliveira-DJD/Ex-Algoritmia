@@ -22,9 +22,9 @@ namespace secretnumber
                 int guess = Convert.ToInt32(Console.ReadLine());
 
                 if (guess == secretnumber)
-                {
-                    GuessNumber = false;
+                {                    
                     Console.WriteLine("You found the secret number!");
+                    GuessNumber = false;
                 }
                 else if (guess < secretnumber)
                 {
