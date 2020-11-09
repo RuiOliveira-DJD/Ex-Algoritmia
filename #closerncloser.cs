@@ -22,7 +22,7 @@ namespace ConsoleApp2
             if ((dist3 - dist1) > (dist2 - dist1) && (dist2 - dist1) < (dist3 - dist2)) { Console.WriteLine("player2 and player1 are the closest to each other"); }
             if ((dist3 - dist1) > (dist3 - dist2) && (dist3 - dist2) < (dist2 - dist1)) { Console.WriteLine("player3 and player2 are the closest to each other"); }
             
-            //tentei usar o minimo de variaveis que achei possivel (tentativa de "clean code")
+            //tentei usar o minimo de variaveis que achei possivel 
 
 
         }
