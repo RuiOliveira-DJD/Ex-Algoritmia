@@ -12,31 +12,33 @@ namespace Iwillkickurass
         {
             Random r = new Random();
 
-            float Healthp1 = r.Next(100, 200);
-            float Healthp2 = r.Next(100, 200);
+            float SimHealthp1 = r.Next(100, 200);
+            float SimHealthp2 = r.Next(100, 200);
+            float MainHealthp1 = SimHealthp1;   //Para alterar a health de simulação apenas visto que é um programa para dar Predict e não executar a ação
+            float MainHealthp2 = SimHealthp2; 
             float ATp1 = r.Next(10, 50);
             float ATp2 = r.Next(10, 50);
             bool Alive = true;
 
             while (Alive)
             {
-                 Healthp1 -= ATp2;
-                 Healthp2 -= ATp1;
+                 SimHealthp1 -= ATp2;
+                 SimHealthp2 -= ATp1;
 
-                if (Healthp1 < 0 && Healthp2 < 0)
+                if (SimHealthp1 < 0 && SimHealthp2 < 0)
                 {
                     Console.WriteLine("They both die");
                     break;
                 }
 
-                if (Healthp1 < 0)
+                if (SimHealthp1 < 0)
                 {
                     Console.WriteLine("Player 2 will win the fight");
                     Alive = false;
                 }
                 else
                 {
-                    if (Healthp2 < 0)
+                    if (SimHealthp2 < 0)
                     {
                         Console.WriteLine("Player 1 will win the fight");
                         Alive = false;
