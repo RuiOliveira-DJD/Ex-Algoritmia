@@ -63,7 +63,23 @@ namespace Filli_n
             for (int i = 0; i < 11; i++)
             {
                 Console.WriteLine(valoresC[i]);
-            }          
+            } 
+            
+            
+            int[] valoresD = new int[10]; //////////////////////////d)
+
+            valoresD[0] = 0;
+            valoresD[1] = 1;
+
+            for (int i = 2; i < valoresD.Length; i++)
+            {
+                valoresD[i] = valoresD[i - 1] + valoresD[i-2];
+            }
+
+            for (int i = 0; i < valoresD.Length; i++)
+            {
+                Console.WriteLine(valoresD[i]);
+            }
 
             }
         }
