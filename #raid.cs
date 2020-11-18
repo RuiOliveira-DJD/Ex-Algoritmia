@@ -34,12 +34,12 @@ namespace Raid
             {
 
                 int Randomizar = r.Next(6);
-                if (Randomizar == 0) { classes[i] = Warrior; WarriorContagem += 1; }
-                if (Randomizar == 1) { classes[i] = Mage; MageContagem += 1; }
-                if (Randomizar == 2) { classes[i] = Healer; HealerContagem += 1; }
-                if (Randomizar == 3) { classes[i] = Beserker; BeserkerContagem += 1; }
-                if (Randomizar == 4) { classes[i] = Assassin; AssassinContagem += 1; }
-                if (Randomizar == 5) { classes[i] = Archer; ArcherContagem += 1; }
+                if (Randomizar == 0) { classes[i] = Warrior; WarriorContagem ++; }
+                if (Randomizar == 1) { classes[i] = Mage; MageContagem ++; }
+                if (Randomizar == 2) { classes[i] = Healer; HealerContagem ++; }
+                if (Randomizar == 3) { classes[i] = Beserker; BeserkerContagem ++; }
+                if (Randomizar == 4) { classes[i] = Assassin; AssassinContagem ++; }
+                if (Randomizar == 5) { classes[i] = Archer; ArcherContagem ++; }
 
             }
 
