@@ -30,9 +30,14 @@ namespace ConsoleApp4
 
             for (int i = 0; i < 10; i++)
             {
-                for(int a = 0; a < 10; a++) {
-                if (baralho1[i] == baralho2[a]) { contador++; }    /////////Me neandertal, me ser mais burro que neandertal tbh ahahahah
+                 while(card) {
+                   
+                    if (baralho1[i] == baralho2[a]) { contador++; }   //////A TERCEIRA É DE VEZ, culpo estar cansado 
+                    a++;
+                    if(a >= 9) card = false;
                 }
+                card = true;
+                a = 0;
             }
 
 
