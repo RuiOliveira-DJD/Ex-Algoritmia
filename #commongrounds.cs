@@ -30,7 +30,7 @@ namespace ConsoleApp4
 
             for (int i = 0; i < 10; i++)
             {
-                 while(card) {
+                 while(card) {                                        //////A outra maneira tb dava mas assim fica diferente
                    
                     if (baralho1[i] == baralho2[a]) { contador++; }   //////A TERCEIRA É DE VEZ, culpo estar cansado 
                     a++;
