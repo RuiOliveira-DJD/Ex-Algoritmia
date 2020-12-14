@@ -14,6 +14,8 @@ namespace ConsoleApp4
 
 
             int contador = 0;
+            int a = 0;
+            bool card = true;
 
             int[] baralho1 = new int[10];
             int[] baralho2 = new int[10];
